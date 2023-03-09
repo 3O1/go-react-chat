@@ -9,9 +9,11 @@ class ChatHistory extends Component {
     ));
 
     return (
-      <div className="ChatHistory">
-        <h2>Chat History</h2>
-        {messages}
+      <div className="ChatHistory bg-black pl-12 pb-8">
+        <h2 className="text-white text-2xl font-medium text-left ">
+          Chat History:
+        </h2>
+        <p className="text-left text-white py-2">{messages}</p>
       </div>
     );
   }

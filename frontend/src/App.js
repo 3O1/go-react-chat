@@ -32,10 +32,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App bg-black">
         <Header />
         <ChatHistory chatHistory={this.state.chatHistory} />
-        <ChatInput send={this.send} />
+        <div className="flex pl-12 absolute bottom-10">
+          <ChatInput send={this.send} />
+        </div>
       </div>
     );
   }
